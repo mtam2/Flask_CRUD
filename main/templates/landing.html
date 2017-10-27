@@ -1,0 +1,12 @@
+{% block body %}
+<div style="text-align: center">
+    {% if session['logged_in'] %}
+    <p>Welcome {{session['username']}}!</p>
+    {% else %}
+    <p>You are not logged in.</p>
+    <br> {% endif %}
+    <a href='/'>Home</a>
+    <br>
+    <a href='/logout'>Logout</a>
+</div>
+{% endblock %}
