@@ -1,7 +1,8 @@
-from flask import Flask, flash, g, redirect, render_template, request, session, abort, url_for
+import os
+
+from flask import Flask, redirect, render_template, request, session, url_for
 from flask_sqlalchemy import SQLAlchemy
 from passlib.apps import custom_app_context as pwd_context
-import os
 
 app = Flask(__name__)
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.path.join(app.root_path, 'ahoy.db')
